@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="DBHDA0JC77U4J2JQL7P0">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,19 +44,13 @@
 </script>
 
 <script>
-  ttq.track('CompletePayment', {
-    contents: [
-      {
-        content_id: 'SKU123',
-        content_type: 'product',
-        content_name: 'Nama Produk',
-        quantity: 1,
-        price: 150000
-      }
-    ],
-    value: 150000,
-    currency: 'IDR'
-  });
+ttq.track('Purchase', {
+  value: 150000,
+  currency: 'IDR',
+  contents: [
+    { content_id: 'SKU123', content_type: 'product', content_name: 'Nama Produk', quantity: 1, price: 150000 }
+  ]
+});
 </script>
 
 </body>
